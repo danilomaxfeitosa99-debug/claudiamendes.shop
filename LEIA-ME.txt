@@ -1,0 +1,33 @@
+PRESSEL - COMO USAR
+
+ARQUIVOS
+  index.html        a pressel
+  termos.html       página de Termos
+  privacidade.html  página de Privacidade
+  foto.jpg          a foto de fundo (hoje: a captura de tela que você enviou, 637x632 px, baixa resolução).
+                    Troque pela foto ORIGINAL em alta resolução, que a própria Dra. Cláudia Mendes autorizar.
+                    Sem ela, a página usa um fundo verde-escuro.
+
+ANTES DE SUBIR - EDITE EM index.html (procure "EDITE AQUI")
+  1) O nome acima do título (hoje: "Dr. Cláudia Mendes"). Guarde a autorização por escrito dela para o uso do nome, do título e da imagem.
+  2) O número do WhatsApp e a mensagem pronta (hoje: 557999655391)
+  3) Foto ideal: quadrada ou vertical, pelo menos 1080 px de largura, até 200 KB (JPG).
+
+NÃO REMOVA a última linha do index.html (script do tracker). É ela que liga o clique do anúncio à conversa.
+
+SUBIR NO GITHUB PAGES
+  1) Crie um repositório novo no GitHub (público).
+  2) Envie todos os arquivos desta pasta (inclusive o .nojekyll, que fica oculto).
+  3) Settings > Pages > Source: "Deploy from a branch" > main / (root) > Save.
+  4) Em alguns minutos o site abre em https://SEUUSUARIO.github.io/NOMEDOREPO/
+  5) Use essa URL (ou seu domínio) como URL final do anúncio no Google Ads.
+
+NO GOOGLE ADS
+  - Marcação automática (auto-tagging) LIGADA.
+  - Sufixo do URL final:
+    utm_source=google&utm_medium=cpc&campaign_id={campaignid}&adgroup_id={adgroupid}&creative_id={creative}
+
+TESTE RÁPIDO (depois de subir)
+  Abra: SUAURL/?gclid=TESTE&campaign_id=1&adgroup_id=1&creative_id=1
+  Clique no botão. A mensagem do WhatsApp deve abrir com "ref:xxxxxxxx" no final.
+  No painel (track.nexustracker.online) deve aparecer 1 visita e 1 clique no botão.
