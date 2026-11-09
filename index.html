@@ -32,6 +32,21 @@ h1 em{display:block;font-weight:400;font-style:italic;color:#c3e8b8}
 .rodape a{color:inherit;text-decoration:none;padding:6px 4px}
 @media (prefers-reduced-motion:reduce){.botao{animation:none}}
 @media (min-width:600px){body{align-items:center;padding:24px 0}.tela{min-height:860px;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.6)}}
+/* Desktop: foto à esquerda, texto e botão à direita (no mesmo link) */
+@media (min-width:900px){
+ html,body{background:radial-gradient(90% 80% at 50% 0%,#26331f 0%,#141414 70%)}
+ body{padding:40px 32px}
+ .tela{max-width:1120px;min-height:max(620px,calc(100vh - 80px));justify-content:center;align-items:flex-end;border-radius:32px}
+ .foto{top:0;bottom:0;left:0;width:58%;height:100%;aspect-ratio:auto;background-size:cover;background-position:center;-webkit-mask-image:linear-gradient(90deg,#000 62%,transparent 100%);mask-image:linear-gradient(90deg,#000 62%,transparent 100%)}
+ .tela::before{background:linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.1) 40%,rgba(0,0,0,.85) 62%,#000 78%)}
+ .tela.sem-foto{background:radial-gradient(90% 90% at 20% 30%,#2a3a27 0%,#0c0c0c 70%)}
+ .conteudo{width:46%;padding:48px 56px 48px 0}
+ .autor{font-size:16px;margin-bottom:16px}
+ h1{font-size:clamp(56px,5.6vw,76px);margin-bottom:34px;letter-spacing:-2px}
+ .botao{min-height:68px;font-size:18px;max-width:440px;transition:transform .15s}
+ .botao:hover{transform:translateY(-2px)}
+ .micro,.rodape{text-align:left;max-width:440px;text-align:center}
+}
 </style>
 </head>
 <body>
